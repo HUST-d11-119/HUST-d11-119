@@ -1,0 +1,58 @@
+body{
+    background-image:url("../images/119.JPG");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.title{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px; /* 根据需要调整按钮之间的间距 */
+}
+  
+.button-container a {
+   flex-basis: calc(50% - 10px); /* 减去间距，确保两个按钮一行 */
+   text-align: center; /* 确保按钮内的图片居中 */
+}
+  
+.button-container a button img {
+   display: block;
+   margin: 0 auto; /* 确保图片居中 */
+   max-width: 100%; /* 根据需要调整图片的最大宽度 */
+   height: auto; /* 保持图片的宽高比 */
+   height:300px;
+}
+
+.button-container a button {
+    position: relative; /* 设置相对定位 */
+  }
+
+  
+.button-container a button .tooltip {
+    visibility: hidden; /* 默认不显示 */
+    width: 120px; /* 根据需要调整宽度 */
+    background-color: black; /* 背景颜色 */
+    color: #fff; /* 文字颜色 */
+    text-align: center; /* 文字居中 */
+    border-radius: 6px; /* 圆角 */
+    padding: 5px 0; /* 内边距 */
+    font-size:large;
+    /* 位置设置 */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px; /* 使用一半的宽度来居中提示框 */
+  }
+
+  .button-container a button:hover .tooltip {
+    visibility: visible; /* 鼠标悬停时显示 */
+  }
